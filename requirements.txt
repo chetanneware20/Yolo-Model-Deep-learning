@@ -1,8 +1,5 @@
-streamlit
 ultralytics
-torch
-torchvision
-opencv-python-headless
-pillow
+streamlit
+Pillow
 numpy
-protobuf<5
+opencv-python-headless
