@@ -6,7 +6,7 @@ import numpy as np
 # Page configuration
 st.set_page_config(page_title="YOLO11 Object Detection", layout="wide")
 
-st.title("🚀 YOLO11 Object Detection App")
+st.title("🚀 YOLO11- Object Detection App-Deep learning")
 st.write("Upload an image to detect objects using the YOLO11n model.")
 
 # Load the model
