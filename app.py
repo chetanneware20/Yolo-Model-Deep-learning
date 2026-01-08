@@ -13,11 +13,10 @@ file = st.file_uploader("Upload Image", type=["jpg", "png", "jpeg"])
 
 if file:
     image = Image.open(file)
-    st.image(image, caption="Uploaded Image", use_container_width=True)
+    st.image(image, use_container_width=True)
 
     with tempfile.NamedTemporaryFile(delete=False, suffix=".jpg") as tmp:
         image.save(tmp.name)
         results = model(tmp.name)
 
-    st.subheader("Detection Result")
     st.image(results[0].plot(), use_container_width=True)
